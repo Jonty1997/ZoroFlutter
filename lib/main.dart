@@ -1,8 +1,8 @@
-import 'package:zoro_flutter/common/common_export_package.dart';
+import 'package:zoro_flutter/common/common.dart';
 import 'ui/home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MultiProviderConfig(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'ZoroFlutter',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        brightness: context.watch<ThemeProvider>().brightness,
+        primarySwatch: context.watch<ThemeProvider>().primarySwatch,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       routes: Routes.getRoute(),
