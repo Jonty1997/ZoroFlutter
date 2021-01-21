@@ -3,7 +3,7 @@
 计划是基础入门APP
 
 使用数据库来存放Widget介绍信息，存放于data.db中；
-使用flutter_cloc作为状态管理插件；
+使用provider作为状态管理插件；
 后期会使用mvvm
 做一个页面切换动画管理类
 
