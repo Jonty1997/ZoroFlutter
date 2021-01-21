@@ -1,4 +1,4 @@
-import 'package:zoro_flutter/common/common_export_package.dart';
+import 'package:zoro_flutter/common/common.dart';
 
 class HomePage extends StatefulWidget {
   static final route = 'HomePage';
