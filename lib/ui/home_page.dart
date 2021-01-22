@@ -8,25 +8,40 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  var _themProvider = ThemeProvider();
+
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            childAspectRatio: 1.0,
-          ),
-          itemBuilder: _buildGridItem,
-          itemCount: 5,
-        ),
-      ),
-    );
+  void initState() {
+    _themProvider = Provider.of<ThemeProvider>(context, listen: false);
+    super.initState();
   }
 
-  Widget _buildGridItem(context, index) => Container(
-        width: 100,
-        height: 100,
-        color: Colors.green[index * 100],
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+        child: SingleChildScrollView(
+      child: Column(
+        children: [
+          Padding(
+              padding: EdgeInsets.all(10),
+              child: AspectRatio(
+                aspectRatio: 2 / 1,
+                child: _buildGridItem(context, 1),
+              )),
+
+        ],
+      ),
+    ));
+  }
+
+  Widget _buildGridItem(context, index) => GestureDetector(
+        onTap: () {
+
+        },
+        child: Container(
+          width: 100,
+          height: 100,
+          color: Colors.green[index * 100],
+        ),
       );
 }
