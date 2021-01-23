@@ -1,3 +1,4 @@
+import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:zoro_flutter/common/common.dart';
 
 class HomePage extends StatefulWidget {
@@ -8,6 +9,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final _swiperList = [
+    {
+      "title": "",
+    },
+  ];
+
   @override
   void initState() {
     super.initState();
@@ -19,22 +26,24 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: [
           Padding(
+            padding: EdgeInsets.fromLTRB(
+                Width.w_16,
+                MediaQuery.of(context).padding.top + Height.h_10,
+                Width.w_16,
+                Height.h_10),
+          ),
+          Padding(
               padding: EdgeInsets.all(10),
               child: AspectRatio(
                 aspectRatio: 2 / 1,
-                child: _buildGridItem(context, 1),
+                child: _buildSwiper(),
               )),
         ],
       ),
     );
   }
 
-  Widget _buildGridItem(context, index) => GestureDetector(
-        onTap: () {},
-        child: Container(
-          width: 100,
-          height: 100,
-          color: Colors.green[index * 100],
-        ),
+  Widget _buildSwiper() => Swiper(
+        itemCount: 3,
       );
 }
