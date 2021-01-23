@@ -8,19 +8,15 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  var _themProvider = ThemeProvider();
-
   @override
   void initState() {
-    _themProvider = Provider.of<ThemeProvider>(context, listen: false);
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: SingleChildScrollView(
-      child: Column(
+    return Scaffold(
+      body: Column(
         children: [
           Padding(
               padding: EdgeInsets.all(10),
@@ -28,16 +24,13 @@ class _HomePageState extends State<HomePage> {
                 aspectRatio: 2 / 1,
                 child: _buildGridItem(context, 1),
               )),
-
         ],
       ),
-    ));
+    );
   }
 
   Widget _buildGridItem(context, index) => GestureDetector(
-        onTap: () {
-
-        },
+        onTap: () {},
         child: Container(
           width: 100,
           height: 100,
