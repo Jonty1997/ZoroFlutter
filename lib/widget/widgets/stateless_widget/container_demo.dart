@@ -43,7 +43,7 @@ class _ContainerDemoState extends State<ContainerDemo> {
           ),
           Container(
             width: 200,
-            height: 500,
+            height: 200,
             alignment: _alignment,
             color: Colors.purple,
             child: Container(
