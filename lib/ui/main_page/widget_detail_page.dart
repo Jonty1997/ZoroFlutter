@@ -114,22 +114,24 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
                   ),
                 )),
             SizedBox(width: Width.w_16),
-            ConstrainedBox(
-              constraints: BoxConstraints(minHeight: 50),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Row(
-                    children: [
-                      Text(_widgetModel?.name ?? ''),
-                      SizedBox(width: Width.w_10),
-                      Text(_widgetModel?.nameCN ?? ''),
-                    ],
-                  ),
-                  SizedBox(height: Height.h_5),
-                  Text(_widgetModel?.desc ?? ''),
-                ],
+            Expanded(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(minHeight: 50),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Row(
+                      children: [
+                        Text(_widgetModel?.name ?? ''),
+                        SizedBox(width: Width.w_10),
+                        Text(_widgetModel?.nameCN ?? ''),
+                      ],
+                    ),
+                    SizedBox(height: Height.h_5),
+                    Text(_widgetModel?.desc ?? ''),
+                  ],
+                ),
               ),
             ),
           ],

@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:zoro_flutter/ui/main_page/widget_name_const.dart';
-import 'package:zoro_flutter/widget/widgets/stateless_widget/container_demo.dart';
+import 'package:zoro_flutter/widget/widgets_demo/widgets.dart';
 
 class WidgetDetailHandle {
   static WidgetDetailHandle _detailHandle;
@@ -14,6 +14,8 @@ class WidgetDetailHandle {
     switch (widgetName) {
       case WidgetNameConst.CONTAINER:
         return ContainerDemo();
+      case WidgetNameConst.ABOUT_DIALOG:
+        return AboutDialogDemo();
       default:
         return Container();
     }
