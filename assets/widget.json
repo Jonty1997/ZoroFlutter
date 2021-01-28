@@ -2,10 +2,11 @@
   "container": {
     "name": "container",
     "nameCN": "容器",
-    "desc": "",
+    "desc": "介绍介绍介绍",
     "level": 5,
     "info": [
-      "【】：介绍属性"
+      "【】：介绍属性",
+      "【哈哈哈哈】：介绍属性"
     ]
   }
 }
