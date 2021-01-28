@@ -1,0 +1,11 @@
+{
+  "container": {
+    "name": "container",
+    "nameCN": "容器",
+    "desc": "",
+    "level": 5,
+    "info": [
+      "【】：介绍属性"
+    ]
+  }
+}

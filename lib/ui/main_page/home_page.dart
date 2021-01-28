@@ -1,5 +1,6 @@
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:zoro_flutter/common/common.dart';
+import 'package:zoro_flutter/ui/main_page/widget_list_page.dart';
 
 class HomePage extends StatefulWidget {
   static final route = 'HomePage';
@@ -11,7 +12,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final _swiperList = [
     {
-      "title": "",
+      "title": "Widget",
     },
   ];
 
@@ -44,6 +45,19 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildSwiper() => Swiper(
-        itemCount: 3,
+        itemCount: _swiperList.length,
+        itemBuilder: (context, index) {
+          var item = _swiperList[index];
+          return InkWell(
+            onTap: _openWidgetListPage,
+            child: Container(
+              color: Colors.green[index * 100],
+              child: Text(item["title"]),
+            ),
+          );
+        },
       );
+
+  void _openWidgetListPage() =>
+      Navigator.pushNamed(context, WidgetListPage.route);
 }

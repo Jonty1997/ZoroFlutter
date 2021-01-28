@@ -12,25 +12,26 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.0
-  sqflite: ^1.3.2 #数据库
   flutter_swiper: ^1.1.6 #轮播
   provider: ^4.3.3 #状态管理
-
+  hive: ^1.4.4+1
+  hive_flutter: ^0.3.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter.
 flutter:
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+    - assets/image/
+    - assets/category_list.json
+    - assets/widget.json
 
   # To add assets to your application, add an assets section, like this:
   # assets:
