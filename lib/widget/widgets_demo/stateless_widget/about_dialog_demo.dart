@@ -10,24 +10,33 @@ class AboutDialogDemo extends StatefulWidget {
 class _AboutDialogDemoState extends State<AboutDialogDemo> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: AboutDialog(
-        applicationVersion: "applicationVersion",
-        applicationIcon: ClipOval(
-          child: Image.asset(
-            "assets/image/logo.png",
-            width: 50,
-            height: 50,
+    return Column(
+      children: [
+        Container(
+          child: AboutDialog(
+            applicationVersion: "v1.0.0",
+            applicationIcon: ClipOval(
+              child:
+                  Image.asset("assets/image/logo.png", width: 50, height: 50),
+            ),
+            applicationLegalese: "[view licenses]:跳转到证书页\n[close]:退出;",
           ),
         ),
-        applicationLegalese: "applicationLegalese",
-      ),
-      // child: OutlineButton(
-      //   onPressed: () {
-      //     showAboutDialog(context: context);
-      //   },
-      //   child: Text("AboutDialog"),
-      // ),
+        OutlineButton(
+          onPressed: () {
+            showAboutDialog(
+              context: context,
+              applicationVersion: "v1.0.0",
+              applicationIcon: ClipOval(
+                child:
+                    Image.asset("assets/image/logo.png", width: 50, height: 50),
+              ),
+              applicationLegalese: "[view licenses]:跳转到证书页\n[close]:退出;",
+            );
+          },
+          child: Text("showAboutDialog"),
+        ),
+      ],
     );
   }
 }
