@@ -28,7 +28,7 @@
       "【applicationVersion】：APP的版本",
       "【applicationIcon】：APP的icon",
       "【applicationLegalese】：小字号的字符串，用于说明",
-      "【children】：child后面的装饰"
+      "【children】：子组件列表"
     ]
   }
 }
