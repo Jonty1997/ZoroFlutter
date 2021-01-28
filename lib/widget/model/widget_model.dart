@@ -5,7 +5,7 @@ class WidgetModel {
   String nameCN;
   String desc;
   int level;
-  List<String> info;
+  List<dynamic> info;
 
   factory WidgetModel.fromJson(Map<String, dynamic> json) =>
       _$WidgetListFromJson(json);
@@ -17,5 +17,5 @@ WidgetModel _$WidgetListFromJson(Map<String, dynamic> json) {
     ..desc = json['desc'] as String
     ..nameCN = json['nameCN'] as String
     ..level = json['level'] as int
-    ..info = json['widget_list'] as List<String>;
+    ..info = json['info'] as List;
 }
