@@ -6,6 +6,12 @@ import 'package:zoro_flutter/common/common.dart';
 var commonPadding =
     EdgeInsets.symmetric(horizontal: Width.w_16, vertical: Height.h_10);
 
+///通用左右布局
+var commonPaddingHorizontal = EdgeInsets.symmetric(horizontal: Width.w_16);
+
+///通用上下边距
+var commonPaddingVertical = EdgeInsets.symmetric(vertical: Height.h_10);
+
 ///通用小边距
 var commonLittlePadding =
     EdgeInsets.symmetric(horizontal: Width.w_10, vertical: Height.h_5);
