@@ -22,3 +22,8 @@ export '../common/res/styles.dart';
 ///========================util
 export '../common/util/common_util.dart';
 export '../common/util/datebase_util.dart';
+
+///========================widget_with_codeview-1.0.5
+export '../common/widget_with_codeview-1.0.5/source_code_view.dart';
+export '../common/widget_with_codeview-1.0.5/syntax_highlighter.dart';
+export '../common/widget_with_codeview-1.0.5/widget_with_codeview.dart';

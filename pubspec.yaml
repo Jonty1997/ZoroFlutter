@@ -14,6 +14,12 @@ dependencies:
   cupertino_icons: ^1.0.0
   flutter_swiper: ^1.1.6 #轮播
   provider: ^4.3.3 #状态管理
+  #为查看代码控件添加
+  animated_floatactionbuttons: ^0.1.0
+  google_fonts: ^1.1.1 #谷歌字体
+  string_scanner: ^1.0.5
+  url_launcher: ^5.7.10
+
   hive: ^1.4.4+1
   hive_flutter: ^0.3.1
 
@@ -32,6 +38,7 @@ flutter:
     - assets/image/
     - assets/category_list.json
     - assets/widget.json
+    - lib/widget/widgets_demo/stateless_widget/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

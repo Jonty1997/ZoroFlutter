@@ -8,6 +8,7 @@ class Routes {
       LaunchPage.route: (_) => LaunchPage(),
       WidgetListPage.route: (_) => WidgetListPage(),
       WidgetDetailPage.route: (_) => WidgetDetailPage(),
+      ViewCodePage.route: (_) => ViewCodePage(),
     };
   }
 }

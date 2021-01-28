@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:zoro_flutter/common/common.dart';
-import 'package:zoro_flutter/ui/main_page/widget_detail_handle.dart';
+import 'file:///C:/Users/69427/IdeaProjects/zoro_flutter/lib/ui/main_page/view_code/view_code_page.dart';
+import 'file:///C:/Users/69427/IdeaProjects/zoro_flutter/lib/ui/main_page/widget_detail/widget_detail_handle.dart';
 import 'package:zoro_flutter/widget/model/widget_model.dart';
 import 'package:zoro_flutter/widget/widget_data_manage.dart';
 
@@ -166,7 +167,9 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
 
   void _collection() {}
 
-  void _code() {}
+  void _code() {
+    Navigator.push(context, MaterialPageRoute(builder: (_) => ViewCodePage()));
+  }
 
   void _share() {}
 
