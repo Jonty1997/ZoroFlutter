@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:zoro_flutter/common/common.dart';
+import 'package:zoro_flutter/ui/ui.dart';
 import 'package:zoro_flutter/widget/model/category_list.dart';
 import 'package:zoro_flutter/widget/model/widget_model.dart';
 import 'package:zoro_flutter/widget/widget_data_manage.dart';
@@ -41,12 +42,20 @@ class _WidgetListPageState extends State<WidgetListPage> {
 
   Widget _buildTitleChildrenItem(WidgetModel item) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (_) => WidgetDetailPage(widgetName: item.name ?? '')));
+      },
       child: Padding(
         padding: commonPadding,
         child: Row(
           children: [
-            Icon(Icons.wb_sunny),
+            Hero(
+              tag: item.name ?? '',
+              child: Icon(Icons.wb_sunny),
+            ),
             SizedBox(width: Width.w_16),
             Text(item.name ?? ""),
           ],
