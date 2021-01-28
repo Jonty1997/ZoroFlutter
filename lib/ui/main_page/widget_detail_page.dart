@@ -31,16 +31,20 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          SizedBox(height: MediaQuery.of(context).padding.top + 10),
-          _buildBar(),
-          _buildHead(),
-          _buildDivider(),
-          _buildDemo(),
-          _buildDivider(),
-          _buildInfo(),
-        ],
+      body: SingleChildScrollView(
+        physics: ClampingScrollPhysics(),
+        child: Column(
+          children: [
+            SizedBox(height: MediaQuery.of(context).padding.top + 10),
+            _buildBar(),
+            _buildHead(),
+            _buildDivider(),
+            _buildDemo(),
+            _buildDivider(),
+            _buildInfo(),
+            SizedBox(height: 10),
+          ],
+        ),
       ),
     );
   }
@@ -48,29 +52,39 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
   ///bar
   Widget _buildBar() => Container(
         width: double.maxFinite,
-        padding: commonPadding,
+        padding: commonPaddingHorizontal,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             InkWell(
               onTap: () => Navigator.pop(context),
-              child: Icon(Icons.arrow_back_ios, size: 20),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Icon(Icons.arrow_back_ios, size: 24),
+              ),
             ),
             Row(
               children: [
                 InkWell(
                   onTap: _collection,
-                  child: Icon(Icons.star_border, size: 20),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Icon(Icons.star_border, size: 24),
+                  ),
                 ),
-                SizedBox(width: Width.w_16),
                 InkWell(
                   onTap: _code,
-                  child: Icon(Icons.code, size: 20),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Icon(Icons.code, size: 24),
+                  ),
                 ),
-                SizedBox(width: Width.w_16),
                 InkWell(
                   onTap: _share,
-                  child: Icon(Icons.share, size: 20),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Icon(Icons.share, size: 24),
+                  ),
                 ),
               ],
             )
