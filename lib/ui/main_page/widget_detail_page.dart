@@ -149,9 +149,6 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
         WidgetDataManage.widgetMap[_widgetName] != null) {
       _widgetModel =
           WidgetModel.fromJson(WidgetDataManage.widgetMap[_widgetName]);
-
-      print(WidgetDataManage.widgetMap[_widgetName]);
-      print(_widgetModel.info);
     }
     if (mounted) setState(() {});
   }
