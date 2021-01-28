@@ -33,11 +33,12 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(height: MediaQuery.of(context).padding.top+10),
+          SizedBox(height: MediaQuery.of(context).padding.top + 10),
           _buildBar(),
           _buildHead(),
           _buildDivider(),
           _buildDemo(),
+          _buildDivider(),
           _buildInfo(),
         ],
       ),
@@ -132,8 +133,19 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
         child: WidgetDetailHandle().getDemo(_widgetName),
       );
 
-  Widget _buildInfo() => Column(
-        children: (_widgetModel?.info ?? []).map((e) => Text(e)).toList(),
+  Widget _buildInfo() => Container(
+        padding: commonPaddingHorizontal,
+        color: Colors.grey.shade100,
+        width: double.maxFinite,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: (_widgetModel?.info ?? [])
+              .map((e) => Padding(
+                    padding: EdgeInsets.only(top: Height.h_10),
+                    child: Text(e),
+                  ))
+              .toList(),
+        ),
       );
 
   void _collection() {}
@@ -144,7 +156,6 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
 
   //初始化数据
   void _init() {
-
     if (WidgetDataManage.widgetMap != null &&
         WidgetDataManage.widgetMap[_widgetName] != null) {
       _widgetModel =
