@@ -16,6 +16,8 @@ class WidgetDetailHandle {
         return ContainerDemo();
       case WidgetNameConst.ABOUT_DIALOG:
         return AboutDialogDemo();
+      case WidgetNameConst.ABOUT_LIST_TILE:
+        return AboutListTileDemo();
       default:
         return Container();
     }
