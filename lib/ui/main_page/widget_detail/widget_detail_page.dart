@@ -133,9 +133,7 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
                         .watch<ThemeProvider>()
                         .primarySwatch
                         .withOpacity(0.5),
-                    border: Border.all(
-                        color: Colors.white70,
-                        width: 2)),
+                    border: Border.all(color: Colors.white70, width: 2)),
                 child: Text(
                   _widgetModel.name.substring(0, 2),
                   style: TextStyle(fontSize: 20, color: Colors.white),
@@ -175,7 +173,12 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
   void _collection() {}
 
   void _code() {
-    Navigator.push(context, MaterialPageRoute(builder: (_) => ViewCodePage()));
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (_) => ViewCodePage(
+                  widgetName: _widgetName,
+                )));
   }
 
   void _share() {}
