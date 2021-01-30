@@ -15,11 +15,10 @@ class _AboutListTileDemoState extends State<AboutListTileDemo> {
           icon: Icon(
             Icons.info,
             size: 24,
-            color: Colors.red,
+            color: Theme.of(context).primaryColor,
           ),
           applicationIcon: ClipOval(
-            child:
-            Image.asset("assets/image/logo.png", width: 50, height: 50),
+            child: Image.asset("assets/image/logo.png", width: 50, height: 50),
           ),
           aboutBoxChildren: [
             Text(
