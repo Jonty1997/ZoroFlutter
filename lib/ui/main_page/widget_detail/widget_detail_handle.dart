@@ -18,6 +18,8 @@ class WidgetDetailHandle {
         return AboutDialogDemo();
       case WidgetNameConst.ABOUT_LIST_TILE:
         return AboutListTileDemo();
+      case WidgetNameConst.ACTION_CHIP:
+        return ActionChipDemo();
       default:
         return Container();
     }
