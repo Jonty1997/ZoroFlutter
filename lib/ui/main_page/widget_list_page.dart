@@ -54,10 +54,26 @@ class _WidgetListPageState extends State<WidgetListPage> {
           children: [
             Hero(
               tag: item.name ?? '',
-              child: Icon(Icons.wb_sunny),
+              child: Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(999)),
+                    color: context
+                        .watch<ThemeProvider>()
+                        .primarySwatch
+                        .withOpacity(0.5),
+                    border: Border.all(color: Colors.white70, width: 2)),
+                child: Text(
+                  item.name.substring(0, 2),
+                  style: TextStyle(fontSize: 20, color: Colors.white),
+                ),
+              ),
             ),
             SizedBox(width: Width.w_16),
-            Text(item.name ?? ""),
+            Text(
+              item.name ?? "",
+              style: TextStyle(fontSize: 16, color: Colors.grey),
+            ),
           ],
         ),
       ),

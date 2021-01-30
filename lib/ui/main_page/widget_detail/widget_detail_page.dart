@@ -97,24 +97,11 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
         padding: commonPadding,
         margin: commonPadding,
         decoration: BoxDecoration(
-          color: MyColors.green_100,
+          color: context.watch<ThemeProvider>().primarySwatch.withOpacity(0.4),
           borderRadius: commonRadius,
         ),
         child: Row(
           children: [
-            Hero(
-                tag: _widgetName,
-                child: ClipRRect(
-                  borderRadius: commonLittleRadius,
-                  child: Container(
-                    width: 50,
-                    height: 50,
-                    color: Colors.white,
-                    alignment: Alignment.center,
-                    child: Text("未定"),
-                  ),
-                )),
-            SizedBox(width: Width.w_16),
             Expanded(
               child: ConstrainedBox(
                 constraints: BoxConstraints(minHeight: 50),
@@ -132,6 +119,26 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
                     SizedBox(height: Height.h_5),
                     Text(_widgetModel?.desc ?? ''),
                   ],
+                ),
+              ),
+            ),
+            SizedBox(width: Width.w_16),
+            Hero(
+              tag: _widgetName,
+              child: Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(999)),
+                    color: context
+                        .watch<ThemeProvider>()
+                        .primarySwatch
+                        .withOpacity(0.5),
+                    border: Border.all(
+                        color: Colors.white70,
+                        width: 2)),
+                child: Text(
+                  _widgetModel.name.substring(0, 2),
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
             ),
