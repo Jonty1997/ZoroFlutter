@@ -14,6 +14,12 @@ class _HomePageState extends State<HomePage> {
     {
       "title": "Widget",
     },
+    {
+      "title": "Widget2",
+    },
+    {
+      "title": "Widget3",
+    },
   ];
 
   @override
@@ -46,13 +52,27 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildSwiper() => Swiper(
         itemCount: _swiperList.length,
+        scale: 0.5,
+        viewportFraction: 0.6,
         itemBuilder: (context, index) {
           var item = _swiperList[index];
           return InkWell(
             onTap: _openWidgetListPage,
-            child: Container(
-              color: Colors.green[index * 100],
-              child: Text(item["title"]),
+            child: ClipRRect(
+              borderRadius: BorderRadius.all(Radius.circular(20)),
+              child: Container(
+                color: Theme.of(context)
+                    .primaryColor
+                    .withOpacity((index + 1) * 0.2),
+                alignment: Alignment.center,
+                child: Text(
+                  item["title"],
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
             ),
           );
         },
