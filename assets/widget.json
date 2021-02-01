@@ -62,14 +62,14 @@
   "AlertDialog": {
     "name": "AlertDialog",
     "nameCN": "警告弹窗",
-    "desc": "警告对话框通知用户需要确认的情况",
-    "level": 2,
+    "desc": "警告对话框通知用户需要确认的情况，具有可选的标题、内容以及动作组件",
+    "level": 3,
     "info": [
-      "【avatar】：头像子组件（左边）",
-      "【label】：文字子组件（中间）",
-      "【onPressed】：点击事件",
-      "【shadowColor】：阴影颜色",
-      "【elevation】：影深"
+      "【title】：标题",
+      "【content】：内容",
+      "【actions】：底部动作组件",
+      "【elevation】：影深",
+      "【shape】：形状"
     ]
   }
 }

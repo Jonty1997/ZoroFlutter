@@ -33,6 +33,14 @@
             "desc": "一个点击条目，点击弹出AboutDialog(包含应用信息)",
             "level": 2
           }
+        },
+        {
+          "data": {
+            "name": "AlertDialog",
+            "nameCN": "警告弹窗",
+            "desc": "警告对话框通知用户需要确认的情况，具有可选的标题、内容以及动作组件",
+            "level": 3
+          }
         }
       ]
     },
