@@ -58,5 +58,18 @@
       "【shadowColor】：阴影颜色",
       "【elevation】：影深"
     ]
+  },
+  "AlertDialog": {
+    "name": "AlertDialog",
+    "nameCN": "警告弹窗",
+    "desc": "警告对话框通知用户需要确认的情况",
+    "level": 2,
+    "info": [
+      "【avatar】：头像子组件（左边）",
+      "【label】：文字子组件（中间）",
+      "【onPressed】：点击事件",
+      "【shadowColor】：阴影颜色",
+      "【elevation】：影深"
+    ]
   }
 }
