@@ -33,26 +33,18 @@
             "desc": "一个点击条目，点击弹出AboutDialog(包含应用信息)",
             "level": 2
           }
-        },
-        {
-          "data": {
-            "name": "ActionChip",
-            "nameCN": "关于应用条目",
-            "desc": "一个点击条目，点击弹出AboutDialog(包含应用信息)",
-            "level": 2
-          }
         }
       ]
     },
     {
       "title": "Chip",
-      "desc": "碎片",
+      "desc": "小碎片条目",
       "widget_list": [
         {
           "data": {
             "name": "ActionChip",
-            "nameCN": "",
-            "desc": "一个点击条目，点击弹出AboutDialog(包含应用信息)",
+            "nameCN": "事件小条目",
+            "desc": "一个事件小条目，有点击的属性，可以指定点击事件以及点击事的样式",
             "level": 2
           }
         }

@@ -19,6 +19,8 @@ class ViewCodeHandle {
         return "lib/widget/widgets_demo/stateless_widget/about_dialog_demo.dart";
       case WidgetNameConst.ABOUT_LIST_TILE:
         return "lib/widget/widgets_demo/stateless_widget/about_list_title_demo.dart";
+      case WidgetNameConst.ACTION_CHIP:
+        return "lib/widget/widgets_demo/stateless_widget/action_chip_demo.dart";
       default:
         return "lib/main.dart";
     }
