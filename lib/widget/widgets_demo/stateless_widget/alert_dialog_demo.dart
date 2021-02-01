@@ -26,10 +26,7 @@ class _AlertDialogDemoState extends State<AlertDialogDemo> {
           actions: [
             FlatButton(onPressed: _showDialog, child: Text("游戏继续")),
             FlatButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: Text("投降")),
+                onPressed: () => Navigator.pop(context), child: Text("投降")),
           ],
           elevation: 100,
         ),
@@ -55,10 +52,9 @@ class _AlertDialogDemoState extends State<AlertDialogDemo> {
             content: Text("阿祖收手吧，外面全是成龙"),
             actions: [
               FlatButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  child: Text("投降")),
+                onPressed: () => Navigator.pop(context),
+                child: Text("投降"),
+              ),
             ],
             elevation: 100,
           ));
