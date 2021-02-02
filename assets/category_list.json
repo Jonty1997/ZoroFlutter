@@ -81,7 +81,7 @@
             "name": "BackButton",
             "nameCN": "返回按钮",
             "desc": "一个material风格的返回按钮",
-            "level": 3
+            "level": 1
           }
         }
       ]
