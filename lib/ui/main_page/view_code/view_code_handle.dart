@@ -23,6 +23,8 @@ class ViewCodeHandle {
         return "lib/widget/widgets_demo/stateless_widget/action_chip_demo.dart";
       case WidgetNameConst.ALERT_DIALOG:
         return "lib/widget/widgets_demo/stateless_widget/alert_dialog_demo.dart";
+      case WidgetNameConst.ANIMATED_ICON:
+        return "lib/widget/widgets_demo/stateless_widget/animated_icon_demo.dart";
       default:
         return "lib/main.dart";
     }

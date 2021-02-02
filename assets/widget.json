@@ -71,5 +71,17 @@
       "【elevation】：影深",
       "【shape】：形状"
     ]
+  },
+  "AnimatedIcon": {
+    "name": "AnimatedIcon",
+    "nameCN": "动画图标",
+    "desc": "用动画控制器control可以使得图标进行动画变换",
+    "level": 3,
+    "info": [
+      "【icon】：动画图标数据",
+      "【progress】：动画",
+      "【color】：颜色",
+      "【size】：大小"
+    ]
   }
 }

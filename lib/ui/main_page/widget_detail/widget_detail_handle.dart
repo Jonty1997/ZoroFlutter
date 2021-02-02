@@ -22,6 +22,8 @@ class WidgetDetailHandle {
         return ActionChipDemo();
       case WidgetNameConst.ALERT_DIALOG:
         return AlertDialogDemo();
+      case WidgetNameConst.ANIMATED_ICON:
+        return AnimatedIconDemo();
       default:
         return Container();
     }

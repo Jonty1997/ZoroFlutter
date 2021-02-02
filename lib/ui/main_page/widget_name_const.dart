@@ -5,4 +5,5 @@ class WidgetNameConst {
   static const ABOUT_LIST_TILE = "AboutListTile";
   static const ACTION_CHIP = "ActionChip";
   static const ALERT_DIALOG = "AlertDialog";
+  static const ANIMATED_ICON = "AnimatedIcon";
 }

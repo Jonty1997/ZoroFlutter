@@ -57,6 +57,20 @@
           }
         }
       ]
+    },
+    {
+      "title": "Icon",
+      "desc": "图标相关",
+      "widget_list": [
+        {
+          "data": {
+            "name": "AnimatedIcon",
+            "nameCN": "动画图标",
+            "desc": "用动画控制器control可以使得图标进行动画变换",
+            "level": 3
+          }
+        }
+      ]
     }
   ]
 }
