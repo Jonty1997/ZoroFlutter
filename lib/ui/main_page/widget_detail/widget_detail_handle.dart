@@ -24,6 +24,8 @@ class WidgetDetailHandle {
         return AlertDialogDemo();
       case WidgetNameConst.ANIMATED_ICON:
         return AnimatedIconDemo();
+      case WidgetNameConst.BACK_BUTTON:
+        return BackButtonDemo();
       default:
         return Container();
     }

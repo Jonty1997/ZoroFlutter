@@ -6,4 +6,5 @@ class WidgetNameConst {
   static const ACTION_CHIP = "ActionChip";
   static const ALERT_DIALOG = "AlertDialog";
   static const ANIMATED_ICON = "AnimatedIcon";
+  static const BACK_BUTTON = "BackButton";
 }

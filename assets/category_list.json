@@ -71,6 +71,20 @@
           }
         }
       ]
+    },
+    {
+      "title": "Button",
+      "desc": "按钮相关",
+      "widget_list": [
+        {
+          "data": {
+            "name": "BackButton",
+            "nameCN": "返回按钮",
+            "desc": "一个material风格的返回按钮",
+            "level": 3
+          }
+        }
+      ]
     }
   ]
 }

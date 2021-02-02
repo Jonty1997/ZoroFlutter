@@ -25,6 +25,8 @@ class ViewCodeHandle {
         return "lib/widget/widgets_demo/stateless_widget/alert_dialog_demo.dart";
       case WidgetNameConst.ANIMATED_ICON:
         return "lib/widget/widgets_demo/stateless_widget/animated_icon_demo.dart";
+      case WidgetNameConst.BACK_BUTTON:
+        return "lib/widget/widgets_demo/stateless_widget/back_button_demo.dart";
       default:
         return "lib/main.dart";
     }
