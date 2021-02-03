@@ -8,4 +8,5 @@ class WidgetNameConst {
   static const ANIMATED_ICON = "AnimatedIcon";
   static const BACK_BUTTON = "BackButton";
   static const BANNER = "Banner";
+  static const BOTTOM_SHEET = "BottomSheet";
 }

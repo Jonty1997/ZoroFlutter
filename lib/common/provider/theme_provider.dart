@@ -21,7 +21,6 @@ class ThemeProvider with ChangeNotifier, DiagnosticableTreeMixin {
   }
 
   void setPrimarySwatch(Color color) {
-    print("有通知");
     _primarySwatch = color;
     notifyListeners();
   }

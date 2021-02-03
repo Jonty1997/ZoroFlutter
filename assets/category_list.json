@@ -97,6 +97,14 @@
             "desc": "一个横幅，用于说明，类似我们测试时候应用右上角的debug标签",
             "level": 1
           }
+        },
+        {
+          "data": {
+            "name": "BottomSheet",
+            "nameCN": "底部抽屉",
+            "desc": "该小组件很少直接使用，通常都是以[ScaffoldState.showBottomSheet]或者[showModalBottomSheet]从底部弹出",
+            "level": 4
+          }
         }
       ]
     }

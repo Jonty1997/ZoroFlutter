@@ -28,6 +28,8 @@ class WidgetDetailHandle {
         return BackButtonDemo();
       case WidgetNameConst.BANNER:
         return BannerDemo();
+      case WidgetNameConst.BOTTOM_SHEET:
+        return BottomSheetDemo();
       default:
         return Container();
     }
