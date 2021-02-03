@@ -34,6 +34,10 @@ class WidgetDetailHandle {
         return BuilderDemo();
       case WidgetNameConst.BUTTON_BAR:
         return ButtonBarDemo();
+      case WidgetNameConst.CARD:
+        return CardDemo();
+      case WidgetNameConst.CHECKBOX_LIST_TILE:
+        return CheckboxListTileDemo();
       default:
         return Container();
     }

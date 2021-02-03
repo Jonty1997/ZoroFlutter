@@ -11,4 +11,6 @@ class WidgetNameConst {
   static const BOTTOM_SHEET = "BottomSheet";
   static const BUILDER = "Builder";
   static const BUTTON_BAR = "ButtonBar";
+  static const CARD = "Card";
+  static const CHECKBOX_LIST_TILE = "CheckboxListTile";
 }

@@ -139,5 +139,31 @@
       "【alignment】：子组件列表排序方式",
       "【children】：子组件"
     ]
+  },
+  "Card": {
+    "name": "Card",
+    "nameCN": "卡片",
+    "desc": "让组件卡片化",
+    "level": 2,
+    "info": [
+      "【buttonHeight】：按钮子组件高度",
+      "【alignment】：子组件列表排序方式",
+      "【children】：子组件"
+    ]
+  },
+  "CheckboxListTile": {
+    "name": "CheckboxListTile",
+    "nameCN": "可选择条目",
+    "desc": "一个带复选框的ListTile。换句话说，带有标签的复选框",
+    "level": 4,
+    "info": [
+      "【value】：checkBox是否选中",
+      "【title】：中间上部分控件",
+      "【subtitle】：中下控件",
+      "【secondary】：最后的控件，一般为icon",
+      "【selected】：checkBox以外的内容是否选中，",
+      "【controlAffinity】：多选框相对于内容的位置",
+      "【onChanged】：选中事件"
+    ]
   }
 }

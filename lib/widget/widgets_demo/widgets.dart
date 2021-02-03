@@ -12,3 +12,5 @@ export "../widgets_demo/stateless_widget/banner_demo.dart";
 export "../widgets_demo/stateless_widget/bottom_sheet_demo.dart";
 export "../widgets_demo/stateless_widget/builder_demo.dart";
 export "../widgets_demo/stateless_widget/button_bar_demo.dart";
+export "../widgets_demo/stateless_widget/card_demo.dart";
+export "../widgets_demo/stateless_widget/checkbox_list_tile_demo.dart";

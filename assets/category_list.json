@@ -95,6 +95,34 @@
       ]
     },
     {
+      "title": "Card",
+      "desc": "卡片",
+      "widget_list": [
+        {
+          "data": {
+            "name": "Card",
+            "nameCN": "卡片",
+            "desc": "让组件卡片化",
+            "level": 2
+          }
+        }
+      ]
+    },
+    {
+      "title": "Checkbox",
+      "desc": "卡片",
+      "widget_list": [
+        {
+          "data": {
+            "name": "CheckboxListTile",
+            "nameCN": "可选择条目",
+            "desc": "一个带复选框的ListTile。换句话说，带有标签的复选框",
+            "level": 4
+          }
+        }
+      ]
+    },
+    {
       "title": "Other",
       "desc": "其他",
       "widget_list": [

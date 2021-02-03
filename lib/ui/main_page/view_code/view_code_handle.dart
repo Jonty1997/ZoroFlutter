@@ -35,6 +35,10 @@ class ViewCodeHandle {
         return "lib/widget/widgets_demo/stateless_widget/builder_demo.dart";
       case WidgetNameConst.BUILDER:
         return "lib/widget/widgets_demo/stateless_widget/button_bar_demo.dart";
+      case WidgetNameConst.CARD:
+        return "lib/widget/widgets_demo/stateless_widget/card_demo.dart";
+      case WidgetNameConst.CHECKBOX_LIST_TILE:
+        return "lib/widget/widgets_demo/stateless_widget/checkbox_list_tile_demo.dart";
       default:
         return "lib/main.dart";
     }
