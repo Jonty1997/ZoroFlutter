@@ -34,6 +34,8 @@ class WidgetDetailHandle {
         return BuilderDemo();
       case WidgetNameConst.BUTTON_BAR:
         return ButtonBarDemo();
+      case WidgetNameConst.CARD:
+        return CardDemo();
       default:
         return Container();
     }

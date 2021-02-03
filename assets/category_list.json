@@ -95,6 +95,20 @@
       ]
     },
     {
+      "title": "Card",
+      "desc": "卡片",
+      "widget_list": [
+        {
+          "data": {
+            "name": "Card",
+            "nameCN": "卡片",
+            "desc": "让组件卡片化",
+            "level": 2
+          }
+        }
+      ]
+    },
+    {
       "title": "Other",
       "desc": "其他",
       "widget_list": [

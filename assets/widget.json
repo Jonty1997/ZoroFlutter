@@ -139,5 +139,16 @@
       "【alignment】：子组件列表排序方式",
       "【children】：子组件"
     ]
+  },
+  "Card": {
+    "name": "Card",
+    "nameCN": "卡片",
+    "desc": "让组件卡片化",
+    "level": 2,
+    "info": [
+      "【buttonHeight】：按钮子组件高度",
+      "【alignment】：子组件列表排序方式",
+      "【children】：子组件"
+    ]
   }
 }
