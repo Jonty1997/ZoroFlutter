@@ -27,6 +27,8 @@ class ViewCodeHandle {
         return "lib/widget/widgets_demo/stateless_widget/animated_icon_demo.dart";
       case WidgetNameConst.BACK_BUTTON:
         return "lib/widget/widgets_demo/stateless_widget/back_button_demo.dart";
+      case WidgetNameConst.BANNER:
+        return "lib/widget/widgets_demo/stateless_widget/banner_demo.dart";
       default:
         return "lib/main.dart";
     }

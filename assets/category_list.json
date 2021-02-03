@@ -85,6 +85,20 @@
           }
         }
       ]
+    },
+    {
+      "title": "Other",
+      "desc": "其他",
+      "widget_list": [
+        {
+          "data": {
+            "name": "Banner",
+            "nameCN": "横幅标语",
+            "desc": "一个横幅，用于说明，类似我们测试时候应用右上角的debug标签",
+            "level": 1
+          }
+        }
+      ]
     }
   ]
 }

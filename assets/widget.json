@@ -93,5 +93,16 @@
       "【color】：图标颜色",
       "【onPressed】：点击事件"
     ]
+  },
+  "Banner": {
+    "name": "Banner",
+    "nameCN": "横幅标语",
+    "desc": "一个横幅，用于说明，类似我们测试时候应用右上角的debug标签",
+    "level": 1,
+    "info": [
+      "【message】：横幅内的文字",
+      "【location】：横幅相对位置",
+      "【color】：横幅颜色"
+    ]
   }
 }

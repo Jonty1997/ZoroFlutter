@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
       "title": "Widget",
     },
     {
-      "title": "Widget2",
+      "title": "testFunction",
     },
     {
       "title": "Widget3",
@@ -57,7 +57,20 @@ class _HomePageState extends State<HomePage> {
         itemBuilder: (context, index) {
           var item = _swiperList[index];
           return InkWell(
-            onTap: _openWidgetListPage,
+            onTap: () {
+              switch (index) {
+                case 0:
+                  _openWidgetListPage();
+                  break;
+
+                case 1:
+                  _test();
+                  break;
+                default:
+                  _openWidgetListPage();
+                  break;
+              }
+            },
             child: ClipRRect(
               borderRadius: BorderRadius.all(Radius.circular(20)),
               child: Container(
@@ -80,4 +93,8 @@ class _HomePageState extends State<HomePage> {
 
   void _openWidgetListPage() =>
       Navigator.pushNamed(context, WidgetListPage.route);
+
+  void _test() {
+    context.read<ThemeProvider>().setBrightness(Brightness.light);
+  }
 }

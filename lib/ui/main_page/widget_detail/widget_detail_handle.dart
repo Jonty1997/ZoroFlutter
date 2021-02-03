@@ -26,6 +26,8 @@ class WidgetDetailHandle {
         return AnimatedIconDemo();
       case WidgetNameConst.BACK_BUTTON:
         return BackButtonDemo();
+      case WidgetNameConst.BANNER:
+        return BannerDemo();
       default:
         return Container();
     }
