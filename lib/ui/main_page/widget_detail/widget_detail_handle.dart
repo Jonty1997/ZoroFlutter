@@ -30,6 +30,8 @@ class WidgetDetailHandle {
         return BannerDemo();
       case WidgetNameConst.BOTTOM_SHEET:
         return BottomSheetDemo();
+      case WidgetNameConst.BUILDER:
+        return BuilderDemo();
       default:
         return Container();
     }

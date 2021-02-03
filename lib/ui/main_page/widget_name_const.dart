@@ -9,4 +9,5 @@ class WidgetNameConst {
   static const BACK_BUTTON = "BackButton";
   static const BANNER = "Banner";
   static const BOTTOM_SHEET = "BottomSheet";
+  static const BUILDER = "Builder";
 }

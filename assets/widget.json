@@ -116,5 +116,17 @@
       "【shape】：形状",
       "【backgroundColor】：背景颜色"
     ]
+  },
+  "Builder": {
+    "name": "Builder",
+    "nameCN": "组件构造器",
+    "desc": "同一个类中使用`XXX.of(context)`获取某类状态对象方法会存在`上下文滞后`的错误，使用Builder解决。",
+    "level": 1,
+    "info": [
+      "【onClosing】：关闭回调",
+      "【builder】：组件构造器",
+      "【shape】：形状",
+      "【backgroundColor】：背景颜色"
+    ]
   }
 }

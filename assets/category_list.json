@@ -105,6 +105,14 @@
             "desc": "该小组件很少直接使用，通常都是以[ScaffoldState.showBottomSheet]或者[showModalBottomSheet]从底部弹出",
             "level": 4
           }
+        },
+        {
+          "data": {
+            "name": "Builder",
+            "nameCN": "组件构造器",
+            "desc": "同一个类中使用`XXX.of(context)`获取某类状态对象方法会存在`上下文滞后`的错误，使用Builder解决。",
+            "level": 1
+          }
         }
       ]
     }

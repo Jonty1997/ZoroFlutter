@@ -10,3 +10,4 @@ export "../widgets_demo/stateless_widget/animated_icon_demo.dart";
 export "../widgets_demo/stateless_widget/back_button_demo.dart";
 export "../widgets_demo/stateless_widget/banner_demo.dart";
 export "../widgets_demo/stateless_widget/bottom_sheet_demo.dart";
+export "../widgets_demo/stateless_widget/builder_demo.dart";
