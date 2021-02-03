@@ -10,4 +10,5 @@ class WidgetNameConst {
   static const BANNER = "Banner";
   static const BOTTOM_SHEET = "BottomSheet";
   static const BUILDER = "Builder";
+  static const BUTTON_BAR = "ButtonBar";
 }

@@ -33,6 +33,8 @@ class ViewCodeHandle {
         return "lib/widget/widgets_demo/stateless_widget/bottom_sheet_demo.dart";
       case WidgetNameConst.BUILDER:
         return "lib/widget/widgets_demo/stateless_widget/builder_demo.dart";
+      case WidgetNameConst.BUILDER:
+        return "lib/widget/widgets_demo/stateless_widget/button_bar_demo.dart";
       default:
         return "lib/main.dart";
     }

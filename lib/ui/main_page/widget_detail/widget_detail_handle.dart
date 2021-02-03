@@ -32,6 +32,8 @@ class WidgetDetailHandle {
         return BottomSheetDemo();
       case WidgetNameConst.BUILDER:
         return BuilderDemo();
+      case WidgetNameConst.BUTTON_BAR:
+        return ButtonBarDemo();
       default:
         return Container();
     }
