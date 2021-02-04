@@ -38,6 +38,8 @@ class WidgetDetailHandle {
         return CardDemo();
       case WidgetNameConst.CHECKBOX_LIST_TILE:
         return CheckboxListTileDemo();
+      case WidgetNameConst.CHECKED_MODE_BANNER:
+        return CheckedModeBannerDemo();
       default:
         return Container();
     }

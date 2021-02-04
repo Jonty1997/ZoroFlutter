@@ -165,5 +165,14 @@
       "【controlAffinity】：多选框相对于内容的位置",
       "【onChanged】：选中事件"
     ]
+  },
+  "CheckedModeBanner": {
+    "name": "CheckedModeBanner",
+    "nameCN": "横幅标语",
+    "desc": "一个横幅，用于说明，类似我们测试时候应用右上角的debug标签，没啥用",
+    "level": 1,
+    "info": [
+      "【child】：子组件"
+    ]
   }
 }

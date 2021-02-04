@@ -14,3 +14,4 @@ export "../widgets_demo/stateless_widget/builder_demo.dart";
 export "../widgets_demo/stateless_widget/button_bar_demo.dart";
 export "../widgets_demo/stateless_widget/card_demo.dart";
 export "../widgets_demo/stateless_widget/checkbox_list_tile_demo.dart";
+export "../widgets_demo/stateless_widget/checked_mode_banner_demo.dart";
