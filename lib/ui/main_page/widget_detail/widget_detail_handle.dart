@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:zoro_flutter/ui/main_page/widget_name_const.dart';
+import 'package:zoro_flutter/widget/widgets_demo/stateless_widget/chip_demo.dart';
 import 'package:zoro_flutter/widget/widgets_demo/widgets.dart';
 
 class WidgetDetailHandle {
@@ -40,6 +41,8 @@ class WidgetDetailHandle {
         return CheckboxListTileDemo();
       case WidgetNameConst.CHECKED_MODE_BANNER:
         return CheckedModeBannerDemo();
+      case WidgetNameConst.CHIP:
+        return ChipDemo();
       default:
         return Container();
     }

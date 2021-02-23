@@ -41,6 +41,8 @@ class ViewCodeHandle {
         return "lib/widget/widgets_demo/stateless_widget/checkbox_list_tile_demo.dart";
       case WidgetNameConst.CHECKED_MODE_BANNER:
         return "lib/widget/widgets_demo/stateless_widget/checked_mode_banner_demo.dart";
+      case WidgetNameConst.CHIP:
+        return "lib/widget/widgets_demo/stateless_widget/chip_demo.dart";
       default:
         return "lib/main.dart";
     }

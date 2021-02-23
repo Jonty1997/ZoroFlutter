@@ -14,4 +14,5 @@ class WidgetNameConst {
   static const CARD = "Card";
   static const CHECKBOX_LIST_TILE = "CheckboxListTile";
   static const CHECKED_MODE_BANNER = "CheckedModeBanner";
+  static const CHIP = "Chip";
 }
