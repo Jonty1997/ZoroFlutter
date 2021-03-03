@@ -1,5 +1,6 @@
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:zoro_flutter/common/common.dart';
+import 'package:zoro_flutter/some_page/webview/webview_page.dart';
 import 'package:zoro_flutter/ui/main_page/widget_list_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -62,9 +63,11 @@ class _HomePageState extends State<HomePage> {
                 case 0:
                   _openWidgetListPage();
                   break;
-
                 case 1:
                   _test();
+                  break;
+                case 2:
+                  _openSomePage();
                   break;
                 default:
                   _openWidgetListPage();
@@ -93,6 +96,11 @@ class _HomePageState extends State<HomePage> {
 
   void _openWidgetListPage() =>
       Navigator.pushNamed(context, WidgetListPage.route);
+
+  void _openSomePage() => Navigator.push(context,
+          MaterialPageRoute(builder: (BuildContext context) {
+        return WebviewPage();
+      }));
 
   void _test() {
     context.read<ThemeProvider>().setBrightness(Brightness.light);
