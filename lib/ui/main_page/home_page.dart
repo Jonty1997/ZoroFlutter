@@ -1,6 +1,6 @@
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:zoro_flutter/common/common.dart';
-import 'package:zoro_flutter/some_page/webview/webview_page.dart';
+import 'package:zoro_flutter/some_page/some_page.dart';
 import 'package:zoro_flutter/ui/main_page/widget_list_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
 
   void _openSomePage() => Navigator.push(context,
           MaterialPageRoute(builder: (BuildContext context) {
-        return WebviewPage();
+        return MainPageList();
       }));
 
   void _test() {
