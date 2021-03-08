@@ -20,6 +20,7 @@ class _MainPageListState extends State<MainPageList> {
         children: [
           _buildTitleChildrenItem("我的", function: _openMinePage),
           _buildTitleChildrenItem("网页", function: _openWebViewPage),
+          _buildTitleChildrenItem("滑动冲突", function: _openDoubleSlidePage),
         ],
       ),
     );
@@ -62,4 +63,7 @@ class _MainPageListState extends State<MainPageList> {
 
   void _openWebViewPage() =>
       Navigator.push(context, MaterialPageRoute(builder: (_) => WebviewPage()));
+
+  void _openDoubleSlidePage() => Navigator.push(
+      context, MaterialPageRoute(builder: (_) => DoubleSlidePage()));
 }
