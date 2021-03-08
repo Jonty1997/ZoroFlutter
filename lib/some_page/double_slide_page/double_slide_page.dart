@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:zoro_flutter/common/common.dart';
 
 class DoubleSlidePage extends StatefulWidget {
@@ -8,8 +9,19 @@ class DoubleSlidePage extends StatefulWidget {
   _DoubleSlidePageState createState() => _DoubleSlidePageState();
 }
 
-class _DoubleSlidePageState extends State<DoubleSlidePage> {
+class _DoubleSlidePageState extends State<DoubleSlidePage>
+    with SingleTickerProviderStateMixin {
   PageController _pageController = new PageController();
+  TabController _tabController;
+  final _titleList = [
+    "1: 哈哈哈",
+    "2: 嘿嘿嘿",
+    "3: 黑乎乎",
+    "4: 呵呵呵",
+    "5: 嚯嚯嚯",
+    "6: 嗨嗨嗨",
+  ];
+
   int _pageIndex = 0;
 
   final int PAGE_MIN_DISTANCE = 120;
@@ -18,10 +30,19 @@ class _DoubleSlidePageState extends State<DoubleSlidePage> {
   bool _isReduce = true;
 
   @override
+  void initState() {
+    _tabController = new TabController(length: _pageLength, vsync: this);
+
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Column(
         children: [
+          _buildTab(),
           Text("就哈哈"),
           Expanded(
             child: PageView(
@@ -41,6 +62,20 @@ class _DoubleSlidePageState extends State<DoubleSlidePage> {
       ),
     );
   }
+
+  Widget _buildTab() => TabBar(
+        controller: _tabController,
+        indicatorWeight: 14.0,
+        isScrollable: true,
+        labelColor: Colors.red,
+        tabs: _titleList
+            .map(
+              (e) => Tab(
+                text: e,
+              ),
+            )
+            .toList(),
+      );
 
   Widget _buildPageItem(int index) => Container(
         color: Colors.green[(index + 1) * 100],
